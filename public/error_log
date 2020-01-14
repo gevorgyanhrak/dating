@@ -1,0 +1,5 @@
+[19-Nov-2019 17:54:41 Europe/Kiev] PHP Parse error:  syntax error, unexpected '=' in /home/harutkkk/public_html/dating/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[19-Nov-2019 15:56:36 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/harutkkk/public_html/dating/routes/console.php on line 1
+[19-Nov-2019 15:59:44 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 20480 bytes) in /home/harutkkk/public_html/dating/vendor/laravel/framework/src/Illuminate/Queue/QueueServiceProvider.php on line 189
+[15-Dec-2019 08:17:44 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/harutkkk/public_html/dating/storage/framework/views/b7de711d67c4a28db9ef95b2c9d0a46689b6e80c.php on line 1
+[15-Dec-2019 08:17:49 UTC] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 32768 bytes) in /home/harutkkk/public_html/dating/storage/framework/views/5c867f92ffda8153792091f8bccefba83fb22d41.php on line 1
