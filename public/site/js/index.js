@@ -29,3 +29,22 @@ $(document).ready(function () {
     });
 
 });
+
+
+jQuery('.online_button').click(function () {
+    jQuery('.chat_wrapper').toggleClass('active_chat');
+    jQuery('.online_button').toggleClass('online_button_active');
+    jQuery('.bottom_chat').toggleClass('active_chat_');
+
+});
+
+jQuery('body').on('click','.times_close_tab',function () {
+    var data_id =   jQuery(this).closest('.chat_example').data('id');
+   jQuery(this).closest('.chat_example').remove();
+   jQuery('.activeTab').each(function () {
+      if(jQuery(this).data('id') == data_id){
+          jQuery(this).removeClass('activeTab');
+      }
+   })
+
+});

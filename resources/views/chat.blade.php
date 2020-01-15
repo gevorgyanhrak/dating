@@ -5,9 +5,9 @@
 {{--</form>--}}
 <span id="auth_id">{{auth::id()}}</span>
 <div id="app">
-        <div class="col-sm-2 col-xs-12 chat_wrapper">
+        <div class="chat_wrapper">
                 <div class="col-inside-lg decor-default chat" style="overflow: hidden; outline: none;" tabindex="5000">
-                        <div class="chat-users"><h6>Online</h6>
+                        <div class="chat-users"><button class="online_button">Online</button>
                             @foreach($users as $user)
                                 @if(Auth::id() != $user->id)
                                 <div class="user_chat_item" data-name="{{$user->name}}" data-id="{{$user->id}}">

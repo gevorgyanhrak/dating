@@ -1130,7 +1130,7 @@ h6{font-size:12px;}
 /*! CSS Used from: Embedded */
 .col-inside-lg{padding:20px;}
 .chat{height:calc(100vh - 52px);}
-.decor-default{background-color:#ffffff;}
+.decor-default{background-color:#ffffff; border-radius: 15px;}
 .chat-users h6{font-size:20px;margin:0 0 20px;}
 .chat-users .user_chat_item{position:relative;padding:0 0 0 50px;display:block;cursor:pointer;margin:0 0 20px;}
 .chat-users .user_chat_item .avatar{top:0;left:0;}
@@ -1142,16 +1142,20 @@ h6{font-size:12px;}
 .chat .avatar .status.offline{background:#ed4e6e;}
 .chat-users .user_chat_item .status{bottom:0;left:28px;}
 .chat .avatar .status{width:10px;height:10px;border-radius:5px;position:absolute;}
-.chat-users .user_chat_item .name{font-size:14px;font-weight:bold;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
-.chat-users .user_chat_item .mood{font:200 14px/20px "Raleway", sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.chat-users .user_chat_item .name{font-size:14px;font-weight:bold;line-height:20px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-left: 15px;}
+.chat-users .user_chat_item .mood{font:200 14px/20px "Raleway", sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis; margin-left: 15px;}
 .chat .avatar{width:40px;height:40px;position:absolute;}
 .chat .avatar img{display:block;border-radius:20px;height:100%;}
 .chat_wrapper{
     position: fixed;
-    right: 0;
-    top: 52px;
+    right: -123px;
+    top: 50px;
     z-index: 99999;
     padding-right: 0;
+    width: 200px;
+    opacity: .8;
+    transition: all .5s ease;
+
 }
 .bottom_chat{
     position: fixed;
@@ -1160,9 +1164,10 @@ h6{font-size:12px;}
     align-items: flex-end;
     justify-content: flex-end;
     bottom: 0;
-    right: 16%;
+    right: 5%;
     width: 84%;
     z-index: 99999999;
+    transition: all .5s ease;
 }
 .btn_width{
     width: 100%;
@@ -1171,9 +1176,11 @@ h6{font-size:12px;}
     border: 1px solid #fff;
     background: #fff;
     padding: 0;
+    transition: all .5s ease;
+    margin-left: 10px;
 }
 .custom_btn{
-    background-color: #231E39;
+    background-color: #e10b4e;
     display:block;
     text-align: center;
     color:#fff;
@@ -1190,7 +1197,7 @@ h6{font-size:12px;}
 .times_close_tab{
     position: absolute;
     color: white;
-    top: 0px;
+    top: 4px;
     right: 8px;
     font-size: 21px;
     cursor: pointer;
@@ -1200,6 +1207,7 @@ h6{font-size:12px;}
     display: inline-block;
     width: 7%;
 }
+
 .received_msg {
     display: inline-block;
     padding: 0 0 0 10px;
@@ -1232,4 +1240,39 @@ h6{font-size:12px;}
 .btn_send_msg{
     margin-left: 5px;
     margin-bottom: 0;
+}
+.online_button{
+    margin-bottom: 13px;
+    background: green;
+    color: #fff;
+    padding: 4px 10px;
+    position: relative;
+    left: -11px;
+    border: none;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+.online_button_active{
+    left: 53px;
+}
+.active_chat{
+    right: -10px;
+    opacity:1;
+}
+.chat_example .card-body ul{
+    overflow-y: auto;
+    height: 225px;
+
+}
+.active_chat_{
+   right: 11%;
+}
+.btn_send_msg{
+    background-color: #e10b4e;
+    border-color: #e10b4e;
+}
+.btn_send_msg:hover{
+    opacity: .8;
+    background-color: #e10b4e;
+    border-color: #e10b4e;
 }
